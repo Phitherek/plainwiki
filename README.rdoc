@@ -1,3 +1,21 @@
 = _plainwiki_ - A MediaWiki wikitext to plain text parser gem
 
-Coming soon!
+== Installation
+
+In your Gemfile, add line:
+
+    gem 'plainwiki'
+
+and run:
+
+    bundle install
+
+Alternatively, you can manually install the gem:
+
+    gem install plainwiki
+
+== Usage
+
+    PlainWiki::Parser.parse(wikitext) => plain text
+
+Enjoy!
