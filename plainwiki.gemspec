@@ -7,5 +7,5 @@ Gem::Specification.new do |s|
     s.authors = ["Phitherek_"]
     s.email = "phitherek@gmail.com"
     s.files = ["lib/plainwiki.rb", "lib/parser.rb"]
-    s.homepage = ["https://github.com/Phitherek/plainwiki"]
+    s.homepage = "https://github.com/Phitherek/plainwiki"
 end
