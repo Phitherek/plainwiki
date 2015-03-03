@@ -48,7 +48,7 @@ module PlainWiki
                             ps = "detect"
                         elsif helper.match(/ref .*\//) != nil
                             ps = "detect"
-                        elsif helper.match(/ref .*/) != nil
+                        elsif helper.match(/ref .*/) != nil || helper == "ref"
                             ps = "ref"
                         else
                             ps = "detect"
@@ -134,6 +134,7 @@ module PlainWiki
                             helper = ""
                             ps = "detect"
                         else
+                            helper = ""
                             ps = "ref"
                         end
                     else
@@ -218,7 +219,7 @@ module PlainWiki
                     ps = "special"
                     speciallev += 1
                 when "special"
-                    if c == "}"
+                    if c == "}" || c == "|"
                         ps = "specialend"
                     elsif c == "{"
                         ps = "tabledetect"
